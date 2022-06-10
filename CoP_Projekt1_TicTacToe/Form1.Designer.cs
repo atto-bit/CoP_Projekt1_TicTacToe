@@ -102,64 +102,82 @@
             // 
             // textBox22
             // 
+            this.textBox22.BackColor = System.Drawing.SystemColors.Info;
             this.textBox22.Location = new System.Drawing.Point(218, 78);
             this.textBox22.Name = "textBox22";
+            this.textBox22.ReadOnly = true;
             this.textBox22.Size = new System.Drawing.Size(100, 22);
             this.textBox22.TabIndex = 12;
             // 
             // textBox21
             // 
+            this.textBox21.BackColor = System.Drawing.SystemColors.Info;
             this.textBox21.Location = new System.Drawing.Point(112, 77);
             this.textBox21.Name = "textBox21";
+            this.textBox21.ReadOnly = true;
             this.textBox21.Size = new System.Drawing.Size(100, 22);
             this.textBox21.TabIndex = 11;
             // 
             // textBox20
             // 
+            this.textBox20.BackColor = System.Drawing.SystemColors.Info;
             this.textBox20.Location = new System.Drawing.Point(6, 78);
             this.textBox20.Name = "textBox20";
+            this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(100, 22);
             this.textBox20.TabIndex = 10;
             // 
             // textBox12
             // 
+            this.textBox12.BackColor = System.Drawing.SystemColors.Info;
             this.textBox12.Location = new System.Drawing.Point(218, 50);
             this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(100, 22);
             this.textBox12.TabIndex = 9;
             // 
             // textBox11
             // 
+            this.textBox11.BackColor = System.Drawing.SystemColors.Info;
             this.textBox11.Location = new System.Drawing.Point(112, 49);
             this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(100, 22);
             this.textBox11.TabIndex = 8;
             // 
             // textBox10
             // 
+            this.textBox10.BackColor = System.Drawing.SystemColors.Info;
             this.textBox10.Location = new System.Drawing.Point(6, 50);
             this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(100, 22);
             this.textBox10.TabIndex = 7;
             // 
             // textBox02
             // 
+            this.textBox02.BackColor = System.Drawing.SystemColors.Info;
             this.textBox02.Location = new System.Drawing.Point(218, 22);
             this.textBox02.Name = "textBox02";
+            this.textBox02.ReadOnly = true;
             this.textBox02.Size = new System.Drawing.Size(100, 22);
             this.textBox02.TabIndex = 6;
             // 
             // textBox01
             // 
+            this.textBox01.BackColor = System.Drawing.SystemColors.Info;
             this.textBox01.Location = new System.Drawing.Point(112, 21);
             this.textBox01.Name = "textBox01";
+            this.textBox01.ReadOnly = true;
             this.textBox01.Size = new System.Drawing.Size(100, 22);
             this.textBox01.TabIndex = 5;
             // 
             // textBox00
             // 
+            this.textBox00.BackColor = System.Drawing.SystemColors.Info;
             this.textBox00.Location = new System.Drawing.Point(6, 22);
             this.textBox00.Name = "textBox00";
+            this.textBox00.ReadOnly = true;
             this.textBox00.Size = new System.Drawing.Size(100, 22);
             this.textBox00.TabIndex = 4;
             // 
