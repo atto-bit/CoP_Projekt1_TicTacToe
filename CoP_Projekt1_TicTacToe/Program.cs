@@ -12,17 +12,17 @@ namespace CoP_Projekt1_TicTacToe
         public string Player1 { get; }
         public string Player2 { get; }
 
-        private object[,] gameField2DArray { get; }
+        private object[,] GameField2DArray { get; }
         // maybe Field Class instead of Object
 
-        private int[,] gameDecidingFields { get; }
+        private int[,] GameDecidingFields { get; }
 
         public Game(string player1, string player2)
         {
             Player1 = player1;
             Player2 = player2;
-            this.gameField2DArray = new object[3, 3];
-            this.gameDecidingFields = new int[5, 2]{
+            this.GameField2DArray = new object[3, 3];
+            this.GameDecidingFields = new int[5, 2]{
                                                             {0, 1},
                                                             {1, 0},
                                                             {1, 1},

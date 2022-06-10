@@ -16,5 +16,15 @@ namespace CoP_Projekt1_TicTacToe
         {
             InitializeComponent();
         }
+
+        private void ResetGame_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StartGame_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
