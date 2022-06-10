@@ -22,7 +22,9 @@ namespace CoP_Projekt1_TicTacToe
 
         public void ResetGame_Click(object sender, EventArgs e)
         {
-
+            Form1 NewForm = new Form1();
+            NewForm.Show();
+            this.Dispose(false);
         }
 
         private void StartGame_Click(object sender, EventArgs e)
@@ -30,13 +32,74 @@ namespace CoP_Projekt1_TicTacToe
             Game  = new GameFlow();
             Game.StartGame(Player1Name.Text, Player2Name.Text);
             CurrentPlayer = Game.MatchField.Player1;
+            textBox1.BackColor = Color.Green;
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button00_Click(object sender, EventArgs e)
         {
             Game.MatchField.FindField(0, 0).PlayField(CurrentPlayer);
-            textBox2.Text = Game.MatchField.FindField(0, 0).Content;
+            textBox00.Text = Game.MatchField.FindField(0, 0).Content;
+
+        }
+
+        private void button01_Click(object sender, EventArgs e)
+        {
+            Game.MatchField.FindField(0, 1).PlayField(CurrentPlayer);
+            textBox01.Text = Game.MatchField.FindField(0, 1).Content;
+        }
+
+        private void button02_Click(object sender, EventArgs e)
+        {
+            Game.MatchField.FindField(0, 2).PlayField(CurrentPlayer);
+            textBox02.Text = Game.MatchField.FindField(0, 2).Content;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Game.MatchField.FindField(1, 0).PlayField(CurrentPlayer);
+            textBox10.Text = Game.MatchField.FindField(1, 0).Content;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Game.MatchField.FindField(1, 1).PlayField(CurrentPlayer);
+            textBox11.Text = Game.MatchField.FindField(1, 1).Content;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Game.MatchField.FindField(1, 2).PlayField(CurrentPlayer);
+            textBox12.Text = Game.MatchField.FindField(1, 2).Content;
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            Game.MatchField.FindField(2, 0).PlayField(CurrentPlayer);
+            textBox20.Text = Game.MatchField.FindField(2, 0).Content;
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Game.MatchField.FindField(2, 1).PlayField(CurrentPlayer);
+            textBox21.Text = Game.MatchField.FindField(2, 1).Content;
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            Game.MatchField.FindField(2, 2).PlayField(CurrentPlayer);
+            textBox22.Text = Game.MatchField.FindField(2, 2).Content;
+        }
+
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
@@ -97,32 +160,32 @@ namespace CoP_Projekt1_TicTacToe
                     }
                     if (x == 1 & y == 0)
                     {
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[0, 0]);
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[2, 0]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[0, 0]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[2, 0]);
                     }
                     if (x == 1 & y == 2)
                     {
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[0, 2]);
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[2, 2]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[0, 2]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[2, 2]);
                     }
                     if (x == 2 & y == 1)
                     {
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[2, 0]);
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[2, 2]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[2, 0]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[2, 2]);
                     }
                     if (x == 1 & y == 1)
                     {
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[0, 0]);
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[2, 2]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[0, 0]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[2, 2]);
 
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[0, 2]);
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[2, 0]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[0, 2]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[2, 0]);
 
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[0, 1]);
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[2, 1]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[0, 1]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[2, 1]);
 
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[1, 0]);
-                        MatchField2DArray[x, y].Neighbors.Append(MatchField2DArray[1, 2]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[1, 0]);
+                        MatchField2DArray[x, y].Neighbors.Add(MatchField2DArray[1, 2]);
                     }
                 }
             }
@@ -174,6 +237,12 @@ namespace CoP_Projekt1_TicTacToe
             MatchField.FillMatchFieldwithFields();
 
         } 
+
+        public void GameLoop()
+        {
+
+
+        }
 
 
     }
