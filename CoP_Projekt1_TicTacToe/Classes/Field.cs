@@ -26,10 +26,10 @@ namespace CoP_Projekt1_TicTacToe.Classes
             //Content = "?";
         }
 
-        public void PlayField(string player)
+        public void PlayField(Player player)
         {
             //so funktioniert das nicht!!
-            if (player == "Player1") this.Content = "X";
+            if (player == player) this.Content = "X";
             else this.Content = "O";
         }
 

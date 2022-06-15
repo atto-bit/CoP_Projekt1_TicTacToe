@@ -180,6 +180,7 @@
             this.textBox00.ReadOnly = true;
             this.textBox00.Size = new System.Drawing.Size(100, 22);
             this.textBox00.TabIndex = 4;
+            this.textBox00.TextChanged += new System.EventHandler(this.textBox00_TextChanged);
             // 
             // groupBox2
             // 

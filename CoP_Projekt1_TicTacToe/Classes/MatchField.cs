@@ -9,20 +9,17 @@ namespace CoP_Projekt1_TicTacToe.Classes
         public class MatchField
         {
 
-            public string Player1 { get; }
-            public string Player2 { get; }
-
             private Field[,] MatchField2DArray { get; }
             // maybe Field Class instead of Object
 
             private int[][] GameDecidingFields { get; }
 
-            public MatchField(string player1, string player2)
+            public MatchField()
             {
-                Player1 = player1;
-                Player2 = player2;
+
                 this.MatchField2DArray = new Field[3, 3];
                 //Arrays mit zwei Feldern in GameDecidingFieldsKoordinaten gespeichert (wird vllt durch andere Prüfungsidee vereinfacht)
+                // Aktuell wurde es nicht  wirklich beutzt.
                 this.GameDecidingFields = new int[][]{
                                                            new int[] {0, 1},
                                                            new int[] {1, 0},

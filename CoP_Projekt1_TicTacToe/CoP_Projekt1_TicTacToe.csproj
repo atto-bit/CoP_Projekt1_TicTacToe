@@ -49,6 +49,7 @@
     <Compile Include="Classes\Field.cs" />
     <Compile Include="Classes\GameFlow.cs" />
     <Compile Include="Classes\MatchField.cs" />
+    <Compile Include="Classes\Player.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

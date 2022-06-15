@@ -10,11 +10,21 @@ namespace CoP_Projekt1_TicTacToe.Classes
     // Rename in GameController
     public class GameFlow
     {
+        public Player CurrentPlayer { get; set; }
         public MatchField MatchField { get; set; }
-
-        public void StartGame(string Player1, string Player2)
+        public List<Player> PlayersInGame { get; } 
+        
+        public GameFlow(Player Player1 , Player Player2)
         {
-            MatchField = new MatchField(Player1, Player2);
+            PlayersInGame = new List<Player>();
+            PlayersInGame.Add(Player1);
+            PlayersInGame.Add(Player2);
+
+        }
+
+        public void StartGame()
+        {
+            MatchField = new MatchField();
             MatchField.FillMatchFieldwithFields();
 
         }
