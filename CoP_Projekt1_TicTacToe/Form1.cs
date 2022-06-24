@@ -163,7 +163,23 @@ namespace CoP_Projekt1_TicTacToe
             groupBox2.Enabled = false;
 
         }
+        public void changeColorActivePlayer()
+        {
+            if(textBox1.BackColor != Color.Green) {
+                textBox1.BackColor = Color.Green;
+                textBox2.BackColor = Color.WhiteSmoke;
+
+            }
+            else
+            {
+                textBox1.BackColor = Color.WhiteSmoke;
+                textBox2.BackColor = Color.Green;
+            }
+
+        }
     }
+
+
 
 
     

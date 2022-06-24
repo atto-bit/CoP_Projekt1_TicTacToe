@@ -50,6 +50,8 @@ namespace CoP_Projekt1_TicTacToe.Classes
                 }
                 
             }
+            Form1.ViewForm1.changeColorActivePlayer();
+
 
 
         }

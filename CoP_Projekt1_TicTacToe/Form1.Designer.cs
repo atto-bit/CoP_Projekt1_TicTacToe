@@ -313,6 +313,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox1.Location = new System.Drawing.Point(52, 343);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -323,6 +324,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox2.Location = new System.Drawing.Point(52, 372);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
