@@ -12,13 +12,19 @@ namespace CoP_Projekt1_TicTacToe.Classes
     {
         public Player CurrentPlayer { get; set; }
         public MatchField MatchField { get; set; }
-        public List<Player> PlayersInGame { get; } 
-        
+        public List<Player> PlayersInGame { get; }
+
+        public const string Player1Filler = "X";
+        public const string Player2Filler = "O";
+
         public GameFlow(Player Player1 , Player Player2)
         {
-            PlayersInGame = new List<Player>();
-            PlayersInGame.Add(Player1);
-            PlayersInGame.Add(Player2);
+            PlayersInGame = new List<Player>
+            {
+                Player1,
+                Player2
+            };
+            CurrentPlayer = Player1;
 
         }
 
@@ -32,8 +38,27 @@ namespace CoP_Projekt1_TicTacToe.Classes
         public void GameLoop()
         {
 
+            MatchField.CheckAllFieldsForWinningConditions();
+
+            for (int i = 0; i < PlayersInGame.Count; i++)
+            {
+                Player player = PlayersInGame[i];
+                if (CurrentPlayer != player)
+                {
+                    CurrentPlayer = player;
+                    break;
+                }
+                
+            }
+
 
         }
+
+        public string DeclareWinner()
+        {
+            return CurrentPlayer.Name;
+        }
+        
 
 
     }

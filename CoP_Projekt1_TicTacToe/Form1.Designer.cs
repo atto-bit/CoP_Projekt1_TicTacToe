@@ -54,6 +54,8 @@
             this.ResetGame = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.WinnerDeclaration = new System.Windows.Forms.TextBox();
+            this.WinnerName = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -202,6 +204,7 @@
             // 
             // button00
             // 
+            this.button00.Enabled = false;
             this.button00.Location = new System.Drawing.Point(9, 21);
             this.button00.Name = "button00";
             this.button00.Size = new System.Drawing.Size(75, 23);
@@ -212,6 +215,7 @@
             // 
             // button02
             // 
+            this.button02.Enabled = false;
             this.button02.Location = new System.Drawing.Point(171, 20);
             this.button02.Name = "button02";
             this.button02.Size = new System.Drawing.Size(75, 23);
@@ -222,6 +226,7 @@
             // 
             // button10
             // 
+            this.button10.Enabled = false;
             this.button10.Location = new System.Drawing.Point(9, 50);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
@@ -232,6 +237,7 @@
             // 
             // button01
             // 
+            this.button01.Enabled = false;
             this.button01.Location = new System.Drawing.Point(90, 20);
             this.button01.Name = "button01";
             this.button01.Size = new System.Drawing.Size(75, 23);
@@ -242,6 +248,7 @@
             // 
             // button11
             // 
+            this.button11.Enabled = false;
             this.button11.Location = new System.Drawing.Point(90, 50);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
@@ -252,6 +259,7 @@
             // 
             // button12
             // 
+            this.button12.Enabled = false;
             this.button12.Location = new System.Drawing.Point(171, 50);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 23);
@@ -262,6 +270,7 @@
             // 
             // button20
             // 
+            this.button20.Enabled = false;
             this.button20.Location = new System.Drawing.Point(9, 79);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(75, 23);
@@ -272,6 +281,7 @@
             // 
             // button21
             // 
+            this.button21.Enabled = false;
             this.button21.Location = new System.Drawing.Point(90, 79);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(75, 23);
@@ -282,6 +292,7 @@
             // 
             // button22
             // 
+            this.button22.Enabled = false;
             this.button22.Location = new System.Drawing.Point(171, 79);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(75, 23);
@@ -320,11 +331,33 @@
             this.textBox2.Text = "Player2 ->";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
+            // WinnerDeclaration
+            // 
+            this.WinnerDeclaration.Location = new System.Drawing.Point(462, 251);
+            this.WinnerDeclaration.Name = "WinnerDeclaration";
+            this.WinnerDeclaration.ReadOnly = true;
+            this.WinnerDeclaration.Size = new System.Drawing.Size(237, 22);
+            this.WinnerDeclaration.TabIndex = 7;
+            this.WinnerDeclaration.Text = "The Winner of the Game is:";
+            this.WinnerDeclaration.Visible = false;
+            // 
+            // WinnerName
+            // 
+            this.WinnerName.Location = new System.Drawing.Point(462, 279);
+            this.WinnerName.Name = "WinnerName";
+            this.WinnerName.ReadOnly = true;
+            this.WinnerName.Size = new System.Drawing.Size(237, 22);
+            this.WinnerName.TabIndex = 8;
+            this.WinnerName.Visible = false;
+            this.WinnerName.TextChanged += new System.EventHandler(this.WinnerName_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.WinnerName);
+            this.Controls.Add(this.WinnerDeclaration);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ResetGame);
@@ -371,6 +404,8 @@
         private System.Windows.Forms.Button ResetGame;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox WinnerDeclaration;
+        private System.Windows.Forms.TextBox WinnerName;
     }
 }
 

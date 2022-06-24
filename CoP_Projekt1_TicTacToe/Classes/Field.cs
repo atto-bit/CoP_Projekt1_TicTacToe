@@ -26,11 +26,38 @@ namespace CoP_Projekt1_TicTacToe.Classes
             //Content = "?";
         }
 
-        public void PlayField(Player player)
+        public bool CheckWinningConditions()
         {
-            //so funktioniert das nicht!!
-            if (player == player) this.Content = "X";
-            else this.Content = "O";
+
+            if (this.Decider && this.Content == Neighbors[0].Content && this.Content == Neighbors[1].Content && this.Content != null)
+            {
+                    return true;  
+            }
+
+            else if (this.CentralField)
+            {
+                for (int i = 0; i < Neighbors.Count() - 1; i += 2)
+                {
+                    if (this.Content == Neighbors[i].Content && this.Content == Neighbors[i + 1].Content && this.Content != null)
+                    {
+                        return true;
+
+                    }
+                }
+
+                return false;
+            }
+
+            else
+            {
+                return false;
+            }
+        }
+
+            public void PlayField(string content)
+        {
+
+            this.Content = content;
         }
 
     }
