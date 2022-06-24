@@ -8,11 +8,17 @@ namespace CoP_Projekt1_TicTacToe.Classes
 {
     public class Player
     {
-        string Name { get; }
+        public string Name { get; }
+        public string Filler { get; }
 
-        public Player(string name){
+        public Player(string name, string filler)
+        {
             Name = name;
-         }
+            Filler = filler;
+        }
+
+
+
     }
 
 }
