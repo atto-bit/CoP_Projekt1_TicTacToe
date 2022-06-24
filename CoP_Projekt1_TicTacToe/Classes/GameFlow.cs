@@ -14,9 +14,6 @@ namespace CoP_Projekt1_TicTacToe.Classes
         public MatchField MatchField { get; set; }
         public List<Player> PlayersInGame { get; }
 
-        public const string Player1Filler = "X";
-        public const string Player2Filler = "O";
-
         public GameFlow(Player Player1 , Player Player2)
         {
             PlayersInGame = new List<Player>
@@ -51,17 +48,7 @@ namespace CoP_Projekt1_TicTacToe.Classes
                 
             }
             Form1.ViewForm1.changeColorActivePlayer();
-
-
-
         }
-
-        public string DeclareWinner()
-        {
-            return CurrentPlayer.Name;
-        }
-        
-
 
     }
 }

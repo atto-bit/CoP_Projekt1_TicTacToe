@@ -9,12 +9,7 @@ namespace CoP_Projekt1_TicTacToe.Classes
     public class Field
     {
         public int[,] Position { get; }
-        public string CorespondingButton { get; }
-        public string CorespondingTextField { get; }
-
         public string Content { get; set; }
-        public string LastModifier { get; set; }
-
         public bool Decider { get; set; }
         public bool CentralField { get; set; }
 
