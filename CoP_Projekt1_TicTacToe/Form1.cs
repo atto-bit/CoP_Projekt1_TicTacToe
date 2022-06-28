@@ -16,5 +16,10 @@ namespace CoP_Projekt1_TicTacToe
         {
             InitializeComponent();
         }
+
+        private void Button1_1_Click(object sender, EventArgs e)
+        {
+            Button1_1.Text = "X";
+        }
     }
 }
