@@ -10,6 +10,7 @@ namespace CoP_Projekt1_TicTacToe.Classes
     // Rename in GameController
     public class GameFlow
     {
+        private int currentRound { get; set; }
         public Player CurrentPlayer { get; set; }
         public MatchField MatchField { get; set; }
         public List<Player> PlayersInGame { get; }
@@ -27,13 +28,16 @@ namespace CoP_Projekt1_TicTacToe.Classes
 
         public void StartGame()
         {
+            currentRound = 0;
             MatchField = new MatchField();
             MatchField.FillMatchFieldwithFields();
 
         }
 
         public void GameLoop()
-        {
+        {   
+            currentRound++;
+            if(PlayersInGame.Count == 9)
 
             MatchField.CheckAllFieldsForWinningConditions();
 
@@ -47,6 +51,12 @@ namespace CoP_Projekt1_TicTacToe.Classes
                 }
                 
             }
+            if (currentRound == 9)
+            {
+                Form1.ViewForm1.NoWinner();
+            }
+                
+                
             Form1.ViewForm1.changeColorActivePlayer();
         }
 

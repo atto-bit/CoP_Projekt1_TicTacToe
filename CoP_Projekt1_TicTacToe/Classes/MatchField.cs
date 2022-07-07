@@ -10,7 +10,6 @@ namespace CoP_Projekt1_TicTacToe.Classes
     {
 
         private Field[,] MatchField2DArray { get; }
-        // maybe Field Class instead of Object
 
         private int[][] GameDecidingFields { get; }
 

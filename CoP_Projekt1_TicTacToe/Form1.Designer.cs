@@ -95,6 +95,7 @@
             this.groupBox1.Controls.Add(this.textBox02);
             this.groupBox1.Controls.Add(this.textBox01);
             this.groupBox1.Controls.Add(this.textBox00);
+            this.groupBox1.Enabled = false;
             this.groupBox1.Location = new System.Drawing.Point(52, 52);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(325, 123);
@@ -195,6 +196,7 @@
             this.groupBox2.Controls.Add(this.button20);
             this.groupBox2.Controls.Add(this.button21);
             this.groupBox2.Controls.Add(this.button22);
+            this.groupBox2.Enabled = false;
             this.groupBox2.Location = new System.Drawing.Point(453, 52);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(250, 123);
@@ -204,7 +206,6 @@
             // 
             // button00
             // 
-            this.button00.Enabled = false;
             this.button00.Location = new System.Drawing.Point(9, 21);
             this.button00.Name = "button00";
             this.button00.Size = new System.Drawing.Size(75, 23);
@@ -215,7 +216,6 @@
             // 
             // button02
             // 
-            this.button02.Enabled = false;
             this.button02.Location = new System.Drawing.Point(171, 20);
             this.button02.Name = "button02";
             this.button02.Size = new System.Drawing.Size(75, 23);
@@ -226,7 +226,6 @@
             // 
             // button10
             // 
-            this.button10.Enabled = false;
             this.button10.Location = new System.Drawing.Point(9, 50);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
@@ -237,7 +236,6 @@
             // 
             // button01
             // 
-            this.button01.Enabled = false;
             this.button01.Location = new System.Drawing.Point(90, 20);
             this.button01.Name = "button01";
             this.button01.Size = new System.Drawing.Size(75, 23);
@@ -248,7 +246,6 @@
             // 
             // button11
             // 
-            this.button11.Enabled = false;
             this.button11.Location = new System.Drawing.Point(90, 50);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
@@ -259,7 +256,6 @@
             // 
             // button12
             // 
-            this.button12.Enabled = false;
             this.button12.Location = new System.Drawing.Point(171, 50);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 23);
@@ -270,7 +266,6 @@
             // 
             // button20
             // 
-            this.button20.Enabled = false;
             this.button20.Location = new System.Drawing.Point(9, 79);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(75, 23);
@@ -281,7 +276,6 @@
             // 
             // button21
             // 
-            this.button21.Enabled = false;
             this.button21.Location = new System.Drawing.Point(90, 79);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(75, 23);
@@ -292,7 +286,6 @@
             // 
             // button22
             // 
-            this.button22.Enabled = false;
             this.button22.Location = new System.Drawing.Point(171, 79);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(75, 23);
@@ -319,7 +312,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(106, 22);
             this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "Player1 ->";
+            this.textBox1.Text = "Player X ->";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
@@ -330,7 +323,7 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(106, 22);
             this.textBox2.TabIndex = 6;
-            this.textBox2.Text = "Player2 ->";
+            this.textBox2.Text = "Player O ->";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // WinnerDeclaration

@@ -41,23 +41,11 @@ namespace CoP_Projekt1_TicTacToe
 
             Player1Name.ReadOnly = true;
             Player2Name.ReadOnly = true;
-
             StartGame.Enabled = false;
 
             textBox1.BackColor = Color.Green;
-
-            button00.Enabled = true;
-            button01.Enabled = true;
-            button02.Enabled = true;
-            button10.Enabled = true;
-            button11.Enabled = true;
-            button12.Enabled = true;
-            button20.Enabled = true;
-            button21.Enabled = true;
-            button22.Enabled = true;
-
-
-
+            groupBox1.Enabled = true;
+            groupBox2.Enabled = true;
 
         }
 
@@ -162,6 +150,14 @@ namespace CoP_Projekt1_TicTacToe
             WinnerName.Visible = true;
             groupBox2.Enabled = false;
 
+        }
+
+        public void NoWinner()
+        {
+            WinnerDeclaration.Visible = true;
+            WinnerName.Text = "You both loose!";
+            WinnerName.Visible = true;
+            groupBox2.Enabled = false;
         }
         public void changeColorActivePlayer()
         {

@@ -8,7 +8,7 @@ namespace CoP_Projekt1_TicTacToe.Classes
 {
     public class Field
     {
-        public int[,] Position { get; }
+        private int[,] Position { get; }
         public string Content { get; set; }
         public bool Decider { get; set; }
         public bool CentralField { get; set; }
@@ -18,7 +18,6 @@ namespace CoP_Projekt1_TicTacToe.Classes
         public Field(int row, int line)
         {
             this.Position = new int[1, 2] { { row, line } };
-            //Content = "?";
         }
 
         public bool CheckWinningConditions()
